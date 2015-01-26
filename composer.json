@@ -1,5 +1,5 @@
 {
-  "name": "WeblizardsGmbH/dynamicdropdown-plugin",
+  "name": "weblizards-gmbh/dynamicdropdown-plugin",
   "type": "pimcore-plugin",
   "license": "BSD-3-Clause",
 	"description": "A Plugin for pimcore that adds a dynamic dropdown object input field",
