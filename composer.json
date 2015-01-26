@@ -1,0 +1,19 @@
+{
+  "name": "WeblizardsGmbH/dynamicdropdown-plugin",
+  "type": "pimcore-plugin",
+  "license": "BSD-3-Clause",
+	"description": "A Plugin for pimcore that adds a dynamic dropdown object input field",
+	"keywords": ["pimcore","plugin","input field", "object", "dynamic", "dropdown"],
+	"homepage": "http://www.www.weblizards.de/",
+	"authors": [
+        {
+            "name": "Thomas Keil",
+            "email": "thomas@weblizards.de",
+            "homepage": "http://www.weblizards.de/",
+            "role": "Developer"
+        }
+    ],
+	"require": {
+        "pimcore/installer-plugin": ">=1"
+    }
+} 
