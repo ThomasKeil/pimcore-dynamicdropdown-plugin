@@ -39,7 +39,7 @@ pimcore.object.tags.dynamicDropdown = Class.create(pimcore.object.tags.select, {
         // generate store
         options_store = new Ext.data.Store({
             proxy: new Ext.data.HttpProxy({
-                url: '/plugin/DynamicDropdown/dynamicdropdown/options'
+                url: '/plugin/DynamicdropdownPlugin/dynamicdropdown/options'
             }),
             baseParams: {
                 source_parent: this.fieldConfig.source_parentid,

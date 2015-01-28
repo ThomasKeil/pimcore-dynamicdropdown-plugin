@@ -25,7 +25,7 @@ pimcore.object.tags.superboxselect = Class.create(pimcore.object.tags.multihref,
 
         remote_data = null;
         jQuery.ajax({
-            url: "/plugin/DynamicDropdown/dynamicdropdown/options",
+            url: "/plugin/DynamicdropdownPlugin/dynamicdropdown/options",
             async: false,
             dataType: "json",
             type: "GET",

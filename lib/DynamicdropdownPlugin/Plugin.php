@@ -5,40 +5,45 @@
  * http://www.pimcore.org/license
  *
  * @category   Pimcore
- * @package    Object_Class
- * @copyright  Copyright (c) 2011 Weblizards GbR (http://www.weblizards.de)
+ * @copyright  Copyright (c) 2015 Weblizards GmbH (http://www.weblizards.de)
  * @author     Thomas Keil <thomas@weblizards.de>
  * @license    http://www.pimcore.org/license     New BSD License
  */
 
-class DynamicDropdown_Plugin extends Pimcore_API_Plugin_Abstract implements Pimcore_API_Plugin_Interface{
+namespace DynamicdropdownPlugin;
+
+use Pimcore\API;
+
+/**
+ * Class \DynamicdropdownPlugin\Plugin
+ */
+class Plugin extends API\Plugin\AbstractPlugin implements API\Plugin\PluginInterface {
 
     /**
     *  install function
     * @return string $message statusmessage to display in frontend
     */
-	public static function install(){
-		if(self::isInstalled()){
-			$statusMessage = "installed";
-		} else {
-			$statusMessage = "not installed";
-		}
-		return $statusMessage;
+    public static function install(){
+        if(self::isInstalled()){
+          $statusMessage = "installed";
+        } else {
+          $statusMessage = "not installed";
+        }
+        return $statusMessage;
     }
 
     /**
-    *
-    * @return boolean
-    */
+     * @return boolean
+     */
     public static function needsReloadAfterInstall(){
         return true;
     }
 
     /**
-    *  indicates wether this plugins is currently installed
-    * @return boolean
-    */
-	public static function isInstalled(){
+     * indicates wether this plugins is currently installed
+     * @return boolean
+     */
+    public static function isInstalled(){
         return true;
     }
 
@@ -64,10 +69,10 @@ class DynamicDropdown_Plugin extends Pimcore_API_Plugin_Abstract implements Pimc
      * @return string path to the translation file relative to plugin direcory
      */
     public static function getTranslationFile($language) {
-        if(file_exists(PIMCORE_PLUGINS_PATH . "/DynamicDropdown/texts/" . $language . ".csv")){
-            return "/DynamicDropdown/texts/" . $language . ".csv";
+        if(file_exists(PIMCORE_PLUGINS_PATH . "/DynamicdropdownPlugin/texts/" . $language . ".csv")){
+            return "/DynamicdropdownPlugin/texts/" . $language . ".csv";
         }
-        return "/DynamicDropdown/texts/en.csv";
+        return "/DynamicdropdownPlugin/texts/en.csv";
         
     }
 }

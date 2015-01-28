@@ -185,7 +185,7 @@ pimcore.object.classes.data.dynamicDropdown = Class.create(pimcore.object.classe
             triggerAction: 'all',
             editable: false,
             store: new Ext.data.JsonStore({
-                url: '/plugin/DynamicDropdown/dynamicdropdown/methods',
+                url: '/plugin/DynamicdropdownPlugin/dynamicdropdown/methods',
                 fields: ["key","value"],
                 baseParams: {
                     classname: Ext.getCmp(this.id + "_classname").getValue()

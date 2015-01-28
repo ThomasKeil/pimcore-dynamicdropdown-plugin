@@ -27,7 +27,7 @@ pimcore.object.tags.dynamicDropdownMultiple = Class.create(pimcore.object.tags.m
 
         remote_data = null;
         jQuery.ajax({
-            url: "/plugin/DynamicDropdown/dynamicdropdown/options",
+            url: "/plugin/DynamicdropdownPlugin/dynamicdropdown/options",
             async: false,
             dataType: "json",
             type: "GET",

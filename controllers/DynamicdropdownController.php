@@ -1,18 +1,21 @@
 <?php
-
 /**
  * This source file is subject to the new BSD license that is 
  * available through the world-wide-web at this URL:
  * http://www.pimcore.org/license
  *
  * @category   Pimcore
- * @package    Object_Class
- * @copyright  Copyright (c) 2011 Weblizards GbR (http://www.weblizards.de)
+ * @copyright  Copyright (c) 2015 Weblizards GmbH (http://www.weblizards.de)
  * @author     Thomas Keil <thomas@weblizards.de>
  * @license    http://www.pimcore.org/license     New BSD License
  */
 
-class Dynamicdropdown_DynamicdropdownController extends Pimcore_Controller_Action {
+
+
+/**
+ * Class Dynamicdropdownplugin_DynamicdropdownController
+ */
+class Dynamicdropdownplugin_DynamicdropdownController extends \Pimcore\Controller\Action {
 
   private $separator = " - ";
 
@@ -22,7 +25,7 @@ class Dynamicdropdown_DynamicdropdownController extends Pimcore_Controller_Actio
 	 */
 	public function optionsAction() {
 
-		$filter = new Zend_Filter_PregReplace(array("match" => "@[^a-zA-Z0-9/\-_]@", "replace" => ""));
+		$filter = new \Zend_Filter_PregReplace(array("match" => "@[^a-zA-Z0-9/\-_]@", "replace" => ""));
 		$parentFolderPath = $filter->filter($this->_getParam("source_parent"));
 		
 		
