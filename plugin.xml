@@ -16,7 +16,7 @@
         <!-- include paths relative to plugin-directory -->
 	<!-- css files needed for pimcore plugin (backend) with path relative to plugin-directory -->
         <pluginCssPaths>
-            <path>/Dynamicdropdown/static/css/admin.css</path>
+            <path>/DynamicdropdownPlugin/static/css/admin.css</path>
         </pluginCssPaths>  				
         <pluginIncludePaths>
             <path>/DynamicdropdownPlugin/lib</path>
